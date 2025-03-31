@@ -10,7 +10,7 @@ export function createGetter(path) {
       return keys.reduce((acc, key) => {
         if (acc && acc.hasOwnProperty(key)) {
           return acc[key];         }
-        return undefined;
+        return ;
       }, obj);
     };
 }
